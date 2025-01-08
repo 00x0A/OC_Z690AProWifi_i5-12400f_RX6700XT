@@ -1,6 +1,6 @@
 # OpenCore Config EFI for Z690-A Pro Wifi
 
-**Latest working macOS**: 15.1.1 (works on Sonoma as well).
+**Latest working macOS**: 15.1.1 (downgraded to Sonoma for stability).
 
 **SMBIOS**: iMacPro1,1 (MacPro7,1 works alebit less performant)
 
@@ -35,7 +35,7 @@
 Some useful [tips and tricks](https://github.com/5T33Z0/OC-Little-Translated/tree/main/A_Config_Tips_and_Tricks) and the full [OpenCore Documentation](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html)
 
 ## Portmapping
-I've done the mapping for Z690-A Pro Wifi using [USBToolBox](https://github.com/USBToolBox/tool), you can make your own if an USB port does not work.
+I've done the mapping for Z690-A Pro Wifi using [USBMap](https://github.com/corpnewt/USBMap), you can make your own if an USB port does not work.
 
 ## Todos
 - [ ] Check for wakeups during sleep.
@@ -61,8 +61,8 @@ I've done the mapping for Z690-A Pro Wifi using [USBToolBox](https://github.com/
 ### Functionality
 | Component    | Status |
 |:---------:|:---:|
-| Wifi      | ✅ (Disabled by default as I don't use it) |
-| Bluetooth | ✅ |
+| Wifi      | 🚫 (Broken in latest Sonoma & Sequoia)|
+| Bluetooth | ✅/🚫 (Patches needed for Sequoia(?)) |
 | Ethernet  | ✅ |
 | iGPU      | (Not tested) |
 | dGPU      | ✅ |
